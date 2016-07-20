@@ -5,7 +5,6 @@ Counting Inversions Algorithm
 
 import sys
 import os
-from copy import deepcopy
 
 def counting_inversions(input_array):
 	"""
@@ -24,6 +23,7 @@ def counting_inversions(input_array):
 	k = 0
 	try:
 		for i in range(0, len(input_array)):
+			# element in the left side array should be pop up first while it equal to the right side
 			if int(left_array[j]) <= int(right_array[k]):
 				input_array[i] = left_array[j]
 				j += 1
