@@ -1,6 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 Quick Sort algorithm
+
+Usage:
+
+	QuickSort.py pivot_mode input_data
+
+		pivot_mode = 1: Use the first element as pivot
+		pivot_mode = 2: Use the last element as pivot
+		pivot_mode = 3: Use the median of first, last, middle element
+		pivot_mode = 4: Use random element as pivot
 """
 
 import sys
